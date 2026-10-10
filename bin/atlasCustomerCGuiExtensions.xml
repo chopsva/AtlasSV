@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+
+<!-- 	<link id="removeCguiShadowWrapper" targetType="screen" targetAction="remove" targetXPath="/customer-display-screen">
+			<frame-ref refid="silver-cgui-shadow-wrapper"/>
+	</link>
+	<link id="addBackCguiShadowWrapper" targetType="screen" targetAction="add" targetXPath="/customer-display-screen">
+		<frame id="silver-cgui-shadow-wrapper" rectangle="135,11,480,359" rows="389" columns="380" opaque="false"> 
+			<frame id="ATLASCustomerReceipt" rectangle="1,2,375,289" rows="285" columns="395">
+				<background-image-ref refid="cguiSACashReceiptBackgound"/>
+				<receipt id="atlas-cgui-receipt" is-expandable="false" rectangle="1,1,390,280" cell-spacing="4" class="CustomerCashReceiptStation">
+					<receipt-color-scheme-ref refid="default-cgui-receipt"/>
+					<font-ref refid="default-cgui-receipt"/>
+					<receipt-decorator-scheme-ref refid="default-cgui-void-receipt"/>
+					<scroll-bar-policy>
+						<horizontal>never</horizontal>
+						<vertical>never</vertical>
+					</scroll-bar-policy>
+				</receipt>
+			</frame>
+			
+		 
+			<frame-ref refid="silver-cgui-total-frame-wrapper"/>
+		</frame>
+	</link>
+-->
+
+<!-- <font id="default-cgui-receipt">
+		<name>Monospaced</name>
+		<size>24</size>
+		<style>bold</style>
+	</font>
+-->
+
+</jgui-root>

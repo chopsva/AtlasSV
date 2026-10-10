@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+
+	<rectangle id="default-signon-input-frame-rect" rectangle="88,477,240,481" /> <!-- 88,477,288,481 -->
+
+</jgui-root>

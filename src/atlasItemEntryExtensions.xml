@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+<!--  move things around/resize -->
+	<rectangle id="default-receipt-frame" rectangle="102,4,316,320"/>
+		<font id="default-receipt">
+			<name>Monospaced</name>
+			<size>14</size> <!-- default is 17 -->
+			<style>bold</style>
+		</font>
+	<rectangle id="defauflt-latch-panel" rectangle="31,1,220,70"/>		
+	<rectangle id="default-total-frame" rectangle="473,1,319,95"/>
+	<rectangle id="default-button-bar" rectangle="365,321,230,50"/>
+	<rectangle id="default-notebook" rectangle="89,552,248,479"/>
+	<rectangle id="ICR-customer-info" rectangle="31,552,248,50"/>
+	<rectangle id="default-display-input-frame" rectangle="31,321,230,100"/>
+	<rectangle id="default-line-display-frame" rectangle="1,1,390,77"/>
+	<rectangle id="default-line-display" rectangle="2,5,390,68"/>
+	<rectangle id="default-text-field" rectangle="78,7,384,20"/>
+		<font id="default-line-display">
+			<!-- <name>POE Monospace</name> -->
+			<name>Vera</name>
+			<size>16</size> <!-- default is 24 -->
+			<style>plain</style>
+		</font>
+	<rectangle id="atlas-operator-keypad" rectangle="132,321,230,200"/>
+	
+<!--  atlas OperatorKeyPad -->
+	<frame id="atlas-operator-keypad" rows="1" columns="1" rectangle-ref="atlas-operator-keypad" opaque="true">
+		<palette id="atlas-operator-keypad-palette" rows="50" columns="37" rectangle="1,1,1,1">
+			<button id="middle-1-1" rectangle="1,1,12,10" defaultIconAllowed="false"  atlasColor="#0000ff">
+				<SimpleKeyAction id="middle-1-1">
+					<text>
+						<key>73</key>
+					</text>
+					<function-code>73</function-code>
+				</SimpleKeyAction>
+			</button>
+			<button id="middle-2-1" rectangle="1,13,12,10" defaultIconAllowed="false"  atlasColor="#964000">
+		
+		
+				<SimpleKeyAction id="middle-2-1">
+					<text>
+						<key>75</key>
+					</text>
+					<function-code>75</function-code>
+				</SimpleKeyAction>
+			</button>
+			<button id="middle-1-2" rectangle="11,1,8,10" defaultIconAllowed="false"   atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-1-2">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>7</key>
+					</text>
+					<data>7</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-2-2" rectangle="11,9,8,10" defaultIconAllowed="false"  atlasFontSize="24" >
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-2-2">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>8</key>
+					</text>
+					<data>8</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-3-2" rectangle="11,17,8,10" defaultIconAllowed="false"  atlasFontSize="24" >
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-3-2">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>9</key>
+					</text>
+					<data>9</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-1-3" rectangle="21,1,8,10" defaultIconAllowed="false"  atlasFontSize="24" >
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-1-3">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>4</key>
+					</text>
+					<data>4</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-2-3" rectangle="21,9,8,10" defaultIconAllowed="false"   atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-2-3">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>5</key>
+					</text>
+					<data>5</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-3-3" rectangle="21,17,8,10" defaultIconAllowed="false"   atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-3-3">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>6</key>
+					</text>
+					<data>6</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-1-4" rectangle="31,1,8,10" defaultIconAllowed="false"  atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-1-4">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>1</key>
+					</text>
+					<data>1</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-2-4" rectangle="31,9,8,10" defaultIconAllowed="false"  atlasFontSize="24" >
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-2-4">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>2</key>
+					</text>
+					<data>2</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-3-4" rectangle="31,17,8,10" defaultIconAllowed="false"   atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-3-4">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>bottomMiddlePanel3</key>
+					</text>
+					<data>3</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-4-4" rectangle="31,25,12,20" defaultIconAllowed="false" atlasColor="#008800">
+				<SimpleKeyAction id="middle-4-4">
+					<text>
+						<key>80</key>
+					</text>
+					<function-code>80</function-code>
+				</SimpleKeyAction>
+			</button>
+			<button id="middle-1-5" rectangle="41,1,15,10" defaultIconAllowed="false"   atlasFontSize="24">
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleDataAction id="middle-1-5">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>0</key>
+					</text>
+					<data>0</data>
+				</SimpleDataAction>
+			</button>
+			<button id="middle-2-5" rectangle="41,17,8,10" defaultIconAllowed="false"  >
+				<font-ref refid="numeric-keypad-button"/>
+				<SimpleKeyAction id="middle-2-5">
+					<text>
+						<font-ref refid="numeric-keypad-button"/>
+						<key>78</key>
+					</text>
+					<function-code>78</function-code>
+				</SimpleKeyAction>
+			</button>
+		</palette>
+	</frame>
+
+<!--  atlas SalesActions pages -->
+
+<!--  TEST  -->
+	<link id="addOperatorKeypad" targetType="frame" targetAction="add" targetXPath="/itemEntry">
+		<frame-ref id="atlas-operator-keypad"/>
+	</link>
+	<link id="removeMiscPage" targetType="notebook" targetAction="remove" targetXPath="/itemEntry/SalesActions">
+		<page id="TranType"/>
+	</link>
+	<link id="removeItemEntryPage" targetType="notebook" targetAction="remove" targetXPath="/itemEntry/SalesActions">
+		<page id="ItemEntry"/>
+	</link>
+ 	<link id="removeCommonPage" targetType="notebook" targetAction="remove" targetXPath="/itemEntry/SalesActions">
+		<page id="Common"/>
+	</link>
+ 	<link id="removeNonSalesPage" targetType="notebook" targetAction="remove" targetXPath="/itemEntry/SalesActions">
+		<page id="NonSales"/>
+	</link>
+	
+	<link id="remove-default-Keypad" targetType="screen" targetAction="remove" targetXPath="/itemEntry">
+		<numeric-keypad id="default-Keypad" />
+	</link>
+<!-- 	<link id="add-default-Keypad" targetType="screen" targetAction="add" targetXPath="/itemEntry">
+		<numeric-keypad rectangle-ref="atlas-operator-keypad" visible="false" id="default-Keypad"/>
+	</link>
+-->
+
+	<link id="removeTotalButton" targetType="frame" targetAction="remove" targetXPath="/itemEntry/DefaultSalesButtonBar">
+		<button id="TotalButton"/>
+	</link>
+	
+	<link id="addAtlasTotalButton" targetType="frame" targetAction="add" targetXPath="/itemEntry/DefaultSalesButtonBar">
+		<button id="TotalButton" rectangle="1,4,1,1">
+        <SimpleKeyAction>
+            <text>
+                <key>Total</key>
+            </text>
+            <image-key>totalGIF</image-key>
+            <function-code>81</function-code>
+            <sales-transaction-behavior>SHOW_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+        </SimpleKeyAction>
+        <DisplayPaletteAction palette-id="atlas-TenderActionPalette-A" class="DisplayCashAmountPaletteAction">
+			<text>
+				<key>Tend1</key>
+			</text>
+			<image-key>tendertype1GIF</image-key>
+		</DisplayPaletteAction>
+        <SetMessageBarTextAction message-bar-id="tender-message-bar">
+            <message-bar-text-key>selectTender</message-bar-text-key>
+        </SetMessageBarTextAction>
+        <DisplayScreenAction screen-id="tenderEntry"/>
+        <ComponentVisibilityAction>
+            <visible-component component-type="notebook" component-id="TenderActions" function="show-and-hide-overlapping"/>
+        </ComponentVisibilityAction>
+        
+        <SetPropertyAction>
+            <workstation-status-property name="QUANTITY_IN_PROGRESS" value="false"/>
+        </SetPropertyAction>
+        <EnableElementAction>
+            <enable-group group-id="TenderSharedCommonTractions" function="enable"/>
+            <enable-group group-id="ItemSharedCommonTractions" function="disable"/>
+            <enable-group group-id="SignonSharedCommonTractions" function="disable"/>
+        </EnableElementAction>
+    </button>
+	</link>
+
+	<link id="addAtlasSalesActionsA" targetType="notebook" targetAction="add" targetXPath="/itemEntry/SalesActions">
+		<page id="atlas-SalesActions-A" rows="8" columns="3" preselected="true">
+			<tab>
+				<text>
+					<font-ref refid="default-resizable-tab"/>
+					<value>Item Entry</value>
+				</text>
+			</tab>
+			<palette id="atlas-SalesActionPalette-A" rectangle="1,1,3,8">
+				<color-scheme-ref refid="default-notebook-palette"/>
+				<text>
+					<font-ref refid="default-palette-title"/>
+					<value>Paleete</value>
+				</text>
+	            <button id="SA_Produce" rectangle="1,1,3,1">                    
+		             <DisplayScreenAction screen-id="produce-drilldown">
+		                 <text>
+		                     <key>produce</key>
+		                 </text>
+		                 <image-key>produce</image-key>
+		             </DisplayScreenAction>
+			        <ConditionalAction>
+			            <condition expression="[$DISPLAY_OPERATOR_SCALE] == false">
+		                       <ComponentVisibilityAction>
+		                           <visible-component component-type="frame" component-id="default-produce-notebook-frame" function="show-and-hide-overlapping"/>
+		                       </ComponentVisibilityAction>
+						</condition>
+			            <condition expression="[$DISPLAY_OPERATOR_SCALE] == true">
+		                       <ComponentVisibilityAction>
+		                           <visible-component component-type="frame" component-id="operator-scale-produce-notebook-frame" function="show-and-hide-overlapping"/>
+		                       </ComponentVisibilityAction>
+						</condition>
+					</ConditionalAction>
+	                <ComponentVisibilityAction>
+	                    <visible-component component-type="notebook" component-id="produceNotebook" function="show-and-hide-overlapping"/>
+	                    <visible-component component-type="button" component-id="backToItemEntry" function="show-and-hide-overlapping"/>
+	                </ComponentVisibilityAction>
+	                <DisplayNotebookPageAction notebook-id="produceNotebook" page-id="produceNotebookPage1"/>
+	            </button>
+	            <button id="SA_Lookup1">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>200</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <!--  data-input-card id="Dept-DIC">
+	                    	<data-input-card-frame-additions>
+	                    		<button-ref refid="SADepartmentDealPriceButton"/>
+	                    	</data-input-card-frame-additions>
+	                    </data-input-card> -->
+	                </action>
+	            </button>
+	            <button id="SA_Lookup2">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>201</function-code>
+	                    <!--  <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/> -->
+	                </action>
+	            </button>
+	            <button id="SA_Lookup3">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>202</function-code>
+	                    
+	                </action>
+	            </button>
+	            <button id="SA_Lookup4">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>203</function-code>
+	                    
+	                </action>
+	            </button>
+	            <button id="SA_Lookup5">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>204</function-code>
+	                    
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup6">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>205</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup7">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>206</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup8">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>207</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup9">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>208</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup10">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>209</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup11">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>210</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup12">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>211</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup13">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>212</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup14">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>213</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup15">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>214</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup16">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>215</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            <button id="SA_Lookup17">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>216</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            	            	            <button id="SA_Lookup18">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>217</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>	            	            <button id="SA_Lookup19">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>218</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>	            	            <button id="SA_Lookup20">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>219</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            
+	            <button id="SA_Dept1">
+	                <action class="com.icr.atlas.sv.AtlasDepartmentAction">
+	                    <image-key>department</image-key>
+	                    <state>10</state>
+	                    <function-code>205</function-code>
+	                    <prompt-key>enterAmt</prompt-key>
+	                    <data-input-card-ref refid="Dept-DIC"/>
+	                </action>
+	            </button>
+	            <button-ref refid="All_Depts"/>
+	
+			</palette>		
+		</page>
+				  
+		
+	</link>
+	<link id="addItemMods" targetType="notebook" targetAction="add" targetXPath="/itemEntry/SalesActions">
+		<page id="atlas-SalesActions-B" rows="8" columns="3">
+			<tab>
+				<text>
+					<font-ref refid="default-resizable-tab"/>
+					<value>Item Mods</value>
+				</text>
+			</tab>
+			<palette id="atlas-SalesActionPalette-B" rectangle="1,1,3,8">
+				<color-scheme-ref refid="default-notebook-palette"/>
+				<text>
+					<font-ref refid="default-palette-title"/>
+					<value>Paleete</value>
+				</text>
+                <button id="SAReturn">
+                    <SimpleKeyAction>
+						<text>
+							<key>Return</key>
+						</text>
+	                    <image-key>returnGIF</image-key>
+	                    <state>10</state>
+	                    <function-code>67</function-code>
+					</SimpleKeyAction>
+				</button>
+				<button id="SAWeight">
+					<SimpleKeyAction>
+						<text>
+							<key>WeightNext</key>
+						</text>
+						<image-key>weightGIF</image-key>
+						<state>10</state>
+						<function-code>72</function-code>
+					</SimpleKeyAction>
+				</button>
+                <button id="PriceOverride">
+					<SimpleKeyAction>
+                        <text>
+                            <key>PriceOverride</key>
+                        </text>
+                        <image-key>PriceOverrideGIF</image-key>
+                        <state>10</state>
+                        <function-code>74</function-code>
+                    </SimpleKeyAction>
+               </button>
+               <button id="SA_Tare">
+               		<SimpleKeyAction>
+                        <text>
+                            <key>Tare</key>
+                        </text>
+                        <image-key>tareGIF</image-key>
+                        <state>10</state>
+                        <function-code>71</function-code>
+                    </SimpleKeyAction>
+              </button>
+                    <button id="TaxNoTax">
+                        <action class="SANonTaxAction">
+                            <text>
+                                <key>NonTax</key>
+                            </text>
+                            <image-key>taxNoTax</image-key>
+                            <state>10</state>
+                            <function-code>77</function-code>
+                            <latch-text-key>nonTax</latch-text-key>
+                            <unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+                            <latch-panel-id>default-latch-panel</latch-panel-id>
+                            <latch-indicator-position>3,2</latch-indicator-position>
+                        </action>
+                    </button>
+                    <button id="FoodStampNoFoodStamp">
+                        <action class="SAFoodStampAction">
+                            <text>
+                                <key>FSNoFS</key>
+                            </text>
+                            <image-key>foodstamps</image-key>
+                            <state>10</state>
+                            <function-code>76</function-code>
+                            <latch-text-key>FSNoFS</latch-text-key>
+                            <unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+                            <latch-panel-id>default-latch-panel</latch-panel-id>
+                            <latch-indicator-position>3,3</latch-indicator-position>
+                        </action>
+                    </button>
+				
+				
+			</palette>
+		</page>
+	</link>
+	<link id="addAtlasCommon" targetType="notebook" targetAction="add" targetXPath="/itemEntry/SalesActions">
+		<page id="AtlasCommon" rows="8" columns="3">
+			<tab><text><font-ref refid="default-resizeable-tab"/><value>COmmon</value></text></tab>	
+			<palette id="atlasCommonPalette" rectangle="1,1,3,8">
+				<color-scheme-ref refid="default-notebook-palette"/>
+				<text>
+					<font-ref refid="default-palette-title"/>
+					<value>EMPTRY!!!!</value>
+				</text>
+				<button-ref refid="SAQuantityNext"/>
+				<button id="SAReturn">
+					<action class="SimpleKeyLatchAction">
+						<text>
+							<key>Return</key>
+						</text>
+						<image-key>returnGIF</image-key>
+						<state>10</state>
+						<function-code>67</function-code>
+						<prompt-key>itemReturnPrompt</prompt-key>
+						<latch-text-key>latchReturnItem</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>1,2</latch-indicator-position>
+					</action>
+				</button>
+				<button id="SAWeight">
+					<action class="SAWeightLatchAction">
+						<text>
+							<key>WeightNext</key>
+						</text>
+						<image-key>weightGIF</image-key>
+						<state>10</state>
+						<function-code>72</function-code>
+						<prompt-key>enterWgt</prompt-key>
+						<latch-text-key>latchWeight</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>1,3</latch-indicator-position>
+					</action>
+					<SetPropertyAction>
+						<pos-data-property name="SA_WEIGHT_IN_PROGRESS" value="true"/>
+					</SetPropertyAction>
+					<ComponentVisibilityAction>
+						<visible-component component-type="button" component-id="YesForWeightSelection" function="show-and-hide-overlapping"/>
+					</ComponentVisibilityAction>
+					<EnableElementAction>
+						<enable-group group-id="scale_weight" function="enable"/>
+						<enable-element element-type="traction" element-id="sa_show_scale_weight" function="enable"/>
+					</EnableElementAction>
+				</button>
+				<button id="SALineItemDiscount">
+					<action class="SAItemDiscountAction">
+						<text>
+							<key>ItemDiscount</key>
+						</text>
+						<image-key>itemdiscountGIF</image-key>
+						<state>10</state>
+						<function-code>63</function-code>
+						<latch-text-key>latchDiscount</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>2,1</latch-indicator-position>
+					</action>
+				</button>
+				<button id="SACancelLineItemDiscount">
+					<action class="SAVoidItemDiscountAction">
+						<text>
+							<key>VoidItemDiscount</key>
+						</text>
+						<image-key>voiditemdiscountGIF</image-key>
+						<state>10</state>
+						<function-code>63</function-code>
+						<latch-text-key>latchVoidDiscount</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>2,2</latch-indicator-position>
+					</action>
+				</button>
+				<button id="SA_Tare">
+					<action class="SATareAction">
+						<text>
+							<key>Tare</key>
+						</text>
+						<image-key>tareGIF</image-key>
+						<state>10</state>
+						<function-code>71</function-code>
+						<prompt-key>enterTare</prompt-key>
+						<latch-text-key>latchTare</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>2,3</latch-indicator-position>
+					</action>
+				</button>
+				<button id="PriceOverride">
+					<action class="PriceOverrideLatchAction">
+						<text>
+							<key>PriceOverride</key>
+						</text>
+						<image-key>PriceOverrideGIF</image-key>
+						<state>10</state>
+						<function-code>74</function-code>
+						<prompt-key>priceOverride</prompt-key>
+						<latch-text-key>PriceOverrideLatchText</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>3,1</latch-indicator-position>
+                        <data-input-card>
+                            <data-input-card-frame-additions>
+                                <button-ref refid="SADealPriceButton"/>
+                            </data-input-card-frame-additions>
+                        </data-input-card>
+					</action>
+				</button>
+				<button id="SAItemVoidNext">
+					<action class="VoidNextAction">
+						<text>
+							<key>ItemVoidNext</key>
+						</text>
+						<image-key>itemvoidnextGIF</image-key>
+						<function-code>70</function-code>
+						<prompt-key>infoVoidNext</prompt-key>
+						<latch-text-key>latchVoidNext</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>3,3</latch-indicator-position>
+					</action>
+					<ComponentVisibilityAction>
+						<visible-component component-type="button" component-id="SASignOffButton" function="hide"/>
+					</ComponentVisibilityAction>
+				</button>				
+				<button-ref refid="TaxNoTax"/>
+				<button id="ACERainCheck" visible="false">
+					<action class="RainCheckLatchAction">
+						<text>
+							<key>RainCheck</key>
+						</text>
+						<image-key>rainCheck</image-key>
+						<state>10</state>
+						<function-code>251</function-code>
+						<prompt-key>rainCheckPrompt</prompt-key>
+						<latch-text-key>RainCheck</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>4,3</latch-indicator-position>
+					</action>
+				</button>
+			</palette>
+		</page>
+	</link>
+ 	<link id="addAtlasNonSales" targetType="notebook" targetAction="add" targetXPath="/itemEntry/SalesActions">
+ 		<page id="NonSalesX" rows="8" columns="3">
+			<tab>
+				<text>
+					<font-ref refid="default-resizable-tab"/>
+					<value>NonSales</value>
+				</text>
+			</tab>
+			<palette id="AtlasNonSalesPalette" rectangle="1,1,4,8">
+				<button id="ATLAS_PrintPartialReceipt">
+					<SimpleKeyAction>
+						<text>
+							<value>Print Partial Receipt</value>
+						</text>
+						<image-key>deptTotalsReportGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>15</data>
+					</SimpleKeyAction>
+				</button>
+				<button id="ProHealthInq">
+					<SimpleKeyAction>
+					<text>
+						<value>HBC BALANCE INQ.</value>
+					</text>
+					<image-key>deptTotalsReportGIF</image-key>
+					<state>10</state>
+					<function-code>61</function-code>
+					<data>89</data>
+					</SimpleKeyAction>
+				</button>
+				<button-ref refid="SA_TillContents"/>
+				<button-ref refid="SA_Tender_Cashing"/>
+				<button-ref refid="SA_Tender_Exchange"/>
+				<button-ref refid="SA_TenderListing"/>
+				<button-ref refid="SA_CashierLoan"/>
+				<button-ref refid="SA_CashierPickup"/>
+				<button-ref refid="SA_Training"/>
+				<button-ref refid="SA_TerminalTransfer"/>
+				<button-ref refid="SA_Terminal_Monitor"/>
+				<button-ref refid="SA_MultiItemPriceVerify"/>
+				<button-ref refid="SA_NoSale_Other"/>				
+				<button id="SA_Reserve_Till">
+					<action class="SimpleKeyAction">
+						<text>
+							<key>reserveTill</key>
+						</text>
+						<image-key>reserveTillGIF</image-key>
+						<state>10</state>
+						<function-code>79</function-code>
+						<function-code-2>61</function-code-2>
+					</action>
+				</button>
+				<button id="SA_DeptTotals">
+					<SimpleKeyAction>
+						<text>
+							<key>deptTotalsReport</key>
+						</text>
+						<image-key>deptTotalsReportGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>80</data>
+					</SimpleKeyAction>
+				</button>
+				<button-ref refid="CashCount"/>
+				<button id="SA_ReprintTender">
+					<SimpleKeyAction>
+						<text>
+							<key>reprintTenderReceipt</key>
+						</text>
+						<image-key>reprintTenderGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>16</data>
+					</SimpleKeyAction>
+				</button>
+				<button id="SA_ReserveTill" visible="false">
+					<action class="SimpleKeyActionWithMultipleFCs">
+						<text>
+							<key>reserveTill</key>
+						</text>
+						<image-key>reserveTillGIF</image-key>
+						<param1>61</param1>
+						<state>10</state>
+						<function-code>79</function-code>
+						<function-code-2>61</function-code-2>
+					</action>
+				</button>
+				<button-ref refid="SA_No_Sales_Tender_Verify"/>
+				<button id="ACE_WIC_Balance_Inquiry" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>wicBalanceInquiry</key>
+						</text>
+						<image-key>WICBalanceInquiry</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>22</data>
+					</SimpleKeyAction>
+				</button>
+                <button id="ACE_Operator_Perf" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>operatorPerformance</key>
+						</text>
+						<image-key>operPerf</image-key>
+						<sequence>[100]96[61]</sequence>
+						<sales-transaction-behavior>HIDE_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+                <button id="ACE_VC_Summary_Receipt" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>reprintValueCardSummaryReceipt</key>
+						</text>
+						<image-key>reprintVCSumRcpt</image-key>
+						<sequence>[100]94[61]</sequence>
+					</SimpleKeyAction>
+				</button>
+                <button id="ACE_VC_Activation_Receipts" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>reprintValueCardActivationReceipts</key>
+						</text>
+						<image-key>reprintVCActRcpt</image-key>
+						<sequence>[100]93[61]</sequence>
+					</SimpleKeyAction>
+				</button>
+			
+			</palette>
+ 		
+ 		</page>
+ 	</link>
+ 	
+ 	<link id="testAdd" targetType="notebook" targetAction="add" targetXPath="/itemEntry/SalesActions">
+		<page id="KenTest" rows="8" columns="3" >
+			<tab>
+				<text>
+					<font-ref refid="default-resizable-tab"/>
+					<value>KTEST</value>
+				</text>
+			</tab>
+			<palette id="xmiscPalette" rectangle="1,1,4,8">
+				<color-scheme-ref refid="default-notebook-palette"/>
+				<text>
+					<font-ref refid="default-palette-title"/>
+					<key>Misc</key>
+				</text>
+				<button id="xSA_VerifyPrice">
+					<BasicInputAction>
+						<text>
+							<key>verifyPrice</key>
+						</text>
+						<image-key>verifyPriceGIF</image-key>
+						<state>10</state>
+						<function-code>80</function-code>
+						<function-code-2>100</function-code-2>
+						<prompt-key>verifyPrice</prompt-key>
+						<input-validation data-required="true"/>
+					</BasicInputAction>
+				</button>
+				<button id="xstore_coupon">
+					<SimpleKeyAction>
+						<text>
+							<key>storeCoupon</key>
+						</text>
+						<image-key>storeCoupon</image-key>
+						<function-code>66</function-code>
+					</SimpleKeyAction>
+					<SetPropertyAction>
+						<pos-data-property name="SA_STORE_COUPON_ADDED" value="true"/>
+					</SetPropertyAction>
+					<ComponentVisibilityAction>
+						<visible-component component-type="palette" component-id="couponPalette" function="show-and-hide-overlapping"/>
+					</ComponentVisibilityAction>
+					<!--when the store coupon button is pressed sign off is no longer available -->
+					<!-- it is put back by some of the substate triggers                        -->
+					<ComponentVisibilityAction>
+						<visible-component component-type="button" component-id="SASignOffButton" function="hide"/>
+					</ComponentVisibilityAction>
+					<EnableElementAction>
+						<enable-group group-id="ace_expecting_tender_after_error" function="enable"/>
+					</EnableElementAction>
+				</button>
+				<button id="xmanufacturer_coupon">
+					<SimpleKeyAction>
+						<text>
+							<key>manufacturerCoupon</key>
+						</text>
+						<image-key>manufCoupon</image-key>
+						<function-code>65</function-code>
+					</SimpleKeyAction>
+					<SetPropertyAction>
+						<pos-data-property name="SA_MANUFACTURER_COUPON_ADDED" value="true"/>
+					</SetPropertyAction>
+					<ComponentVisibilityAction>
+						<visible-component component-type="palette" component-id="couponPalette" function="show-and-hide-overlapping"/>
+					</ComponentVisibilityAction>
+					<EnableElementAction>
+						<enable-group group-id="ace_expecting_tender_after_error" function="enable"/>
+					</EnableElementAction>
+				</button>
+				<button id="xSA_Deposit">
+					<SimpleKeyLatchAction id="SA_DepositAction">
+						<text>
+							<key>deposit</key>
+						</text>
+						<image-key>depositGIF</image-key>
+						<function-code>64</function-code>
+						<latch-text-key>latchDeposit</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>4,1</latch-indicator-position>
+					</SimpleKeyLatchAction>
+				</button>
+				<button-ref refid="SA_TillExchange"/>
+				<button id="xSA_ReturnItemTransaction">
+					<SimpleKeyAction>
+						<text>
+							<key>returnItemTrx</key>
+						</text>
+						<image-key>returnItemTrxGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>12</data>
+						<sales-transaction-behavior>HIDE_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button-ref refid="Retrieve"/>
+				<button-ref refid="SA_ReprintPartial"/>
+				<button id="eatin_takeout" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>eatinTakeout</key>
+						</text>
+						<image-key>eatinTakeoutGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>0</data>
+					</SimpleKeyAction>
+				</button>
+				<button id="xSuppress_Receipt" rectangle="2,3,1,1" visible="false">			
+				    <SimpleKeyAction>
+						<text>
+							<key>suppressReceipt</key>
+						</text>
+						<image-key>suppressSalesReceipt</image-key>
+				        <sequence>[100]91[61]</sequence>
+						<sales-transaction-behavior>SHOW_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="xAllow_Receipt"  rectangle="2,3,1,1" visible="false">
+  					<SimpleKeyAction>
+						<text>
+							<key>allowReceipt</key>
+						</text>
+						<image-key>printSalesReceipt</image-key>
+						<sequence>[100]92[61]</sequence>
+						<sales-transaction-behavior>SHOW_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="xCreate_Digital_Receipt" rectangle="2,4,1,1" visible="false">
+  					<SimpleKeyAction>
+						<text>
+							<key>createDigitalReceipt</key>
+						</text>
+						<image-key>createDigitalReceipt</image-key>
+						<sequence>[100]89[61]</sequence>
+						<sales-transaction-behavior>SHOW_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="xSuppress_Digital_Receipt" rectangle="2,4,1,1" visible="false">
+  					<SimpleKeyAction>
+						<text>
+							<key>suppressDigitalReceipt</key>
+						</text>
+						<image-key>suppressDigitalReceipt</image-key>
+						<sequence>[100]90[61]</sequence>
+						<sales-transaction-behavior>SHOW_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+					<ConditionalAction>
+						<condition expression="[$SPECIAL_SUPPRESS_PAPER_RECEIPT_ENABLED] == true">
+						    <ConditionalAction>
+								<condition expression="[$SUPPRESS_PAPER_RECEIPT_KEY_SEQUENCE_ENABLED] == false">
+									<ConditionalAction>
+										<condition expression="[$SUPPRESSING_PAPER_RECEIPT] == true">
+											<EnableElementAction>
+												<enable-element element-type="traction" element-id="digital-receipt-special-suppress-paper-receipt" function="enable"/>
+											</EnableElementAction>
+										</condition>
+										<condition expression="[$SUPPRESSING_PAPER_RECEIPT] == false">
+											<ComponentVisibilityAction>
+												<visible-component component-type="button" component-id="Suppress_Receipt" function="show"/>
+											</ComponentVisibilityAction>
+										</condition>
+									</ConditionalAction>
+								</condition>
+							</ConditionalAction>
+						</condition>
+					</ConditionalAction>
+				</button>
+				<button-ref refid="SA_Tender_Removal"/>
+				<button id="SA_ChartListAction">
+					<action class="SAChartListAction">
+						<text>
+							<key>velocityCodeList</key>
+						</text>
+						<image-key>velocityCodeList</image-key>
+						<state>10</state>
+					</action>
+				</button>
+				<button id="CustomerNumber">
+					<SimpleKeyAction id="CustomerNumber">
+						<text>
+							<key>customerID</key>
+						</text>
+						<image-key>customerGIF</image-key>
+						<function-code>89</function-code>
+					</SimpleKeyAction>
+				</button>
+				<button id="SA_ReprintPreviousTransaction">
+					<action class="ReprintPreviousTransAction" id="SA_ReprintPreviousTransaction">
+						<text>
+							<key>reprintPreviousTransaction</key>
+						</text>
+						<image-key>reprintPreviousTransactionGIF</image-key>
+						<param1>99</param1>
+						<param2>61</param2>
+						<state>10</state>
+						<function-code>100</function-code>
+					</action>
+				</button>
+				<button id="SA_WIC">
+					<SimpleKeyAction id="SA_WIC">
+						<text>
+							<key>WIC</key>
+						</text>
+						<image-key>WICGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>13</data>
+						<sales-transaction-behavior>HIDE_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="DisableDoubleCoupons">
+					<action class="SimpleKeyAction" id="DisableDoubleCoupons">
+						<text>
+							<key>disableDoubleCoupons</key>
+						</text>
+						<image-key>disableDoubleCoupons</image-key>
+						<function-code>100</function-code>
+						<prompt-key>enterCoupon</prompt-key>
+					</action>
+				</button>
+				<button id="BalanceInquiry">
+					<SimpleKeyAction>
+						<text>
+							<key>BalanceInquiry</key>
+						</text>
+						<image-key>BalanceInquiryGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>20</data>
+						<sales-transaction-behavior>HIDE_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="ValueCardBalanceInquiry">
+					<SimpleKeyAction>
+						<text>
+							<key>ValueCardBalanceInquiry</key>
+						</text>
+						<image-key>ValueCardBalanceInquiryGIF</image-key>
+						<state>10</state>
+						<function-code>61</function-code>
+						<data>21</data>
+						<sales-transaction-behavior>HIDE_WHEN_TRANSACTION_ACTIVE</sales-transaction-behavior>
+					</SimpleKeyAction>
+				</button>
+				<button id="FoodStampNoFoodStamp">
+					<action class="SAFoodStampAction">
+						<text>
+							<key>FSNoFS</key>
+						</text>
+						<image-key>foodstamps</image-key>
+						<state>10</state>
+						<function-code>76</function-code>
+						<latch-text-key>FSNoFS</latch-text-key>
+						<unlatch-behavior>ITEM_UNLATCH</unlatch-behavior>
+						<latch-panel-id>default-latch-panel</latch-panel-id>
+						<latch-indicator-position>4,2</latch-indicator-position>
+					</action>
+				</button>
+				<button-ref refid="SA_NoSale"/>
+				<button id="SA_PrintGiftReceipt" visible="false">
+					<action class="ReprintPreviousTransAction" id="SA_PrintGiftReceipt">
+						<text>
+							<key>printGiftReceipt</key>
+						</text>
+						<image-key>printGiftReceipt</image-key>
+						<param1>98</param1>
+						<param2>61</param2>
+						<state>10</state>
+						<function-code>100</function-code>
+					</action>
+				</button>
+				<button id="ACE_Reprint_WIC_Receipt">
+					<action class="ReprintPreviousTransAction" id="ACE_ReprintWICReceipt">
+						<text>
+							<key>wicReprintReceipt</key>
+						</text>
+						<image-key>reprintPreviousTransactionGIF</image-key>
+						<param1>97</param1>
+						<param2>61</param2>
+						<state>10</state>
+						<function-code>100</function-code>
+					</action>
+				</button>
+				<button id="SA_ProductVersion" visible="false">
+					<SimpleKeyAction>
+						<text>
+							<key>productVersion</key>
+						</text>
+						<image-key>informGIF</image-key>
+						<sequence>[100]95[61]</sequence>
+					</SimpleKeyAction>
+				</button>
+			</palette>
+		</page>
+	</link>
+ </jgui-root>

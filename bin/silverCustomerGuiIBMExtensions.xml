@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+<!--  add loyalty info to customer screen -->
+ 
+	<link id="removeBrowser1" targetType="screen" targetAction="remove" targetXPath="/customer-display-screen">
+		<frame-ref refid="silver-cgui-browser1-frame-wrapper"/>
+	</link>
+ 	<link id="readdBrowser1Resized" targetType="screen" targetAction="add" targetXPath="/customer-display-screen">
+        <frame id="ATLAS-silver-cgui-browser1-frame-wrapper" rectangle="132,402,395,355" rows="264" columns="395"> <!-- 502,295 for atlas later -->
+            <frame id="silver-cgui-browser1-frame" rectangle="1,1,395,254" rows="6" columns="8">
+                <browser id="ads1Browser" rectangle="1,1,8,6" URL-filename-key="CGUIviewer1.fileName"/>
+            </frame>
+        </frame>	
+	</link>
+
+    <link id="removeBrowser2" targetType="screen" targetAction="remove" targetXPath="/customer-display-screen">
+		<frame-ref refid="silver-cgui-browser2-frame-wrapper"/>
+	</link>
+
+    <link id="addCustomerInfo" targetType="screen" targetAction="add" targetXPath="/customer-display-screen">
+		
+		<frame id="ATLAS_CUSTOMER_INFO" rows="10" columns="10" rectangle="495,402,395,70" visible="true" opaque="true">
+			<color-scheme-ref refid="default-amountDue-frame"/>
+			<label id="ATLAS_CUSTOMER_INFO_ID_LABEL" rectangle="1,1,4,5">
+				<color-scheme-ref refid="ATLASCustomerCGuiFrame_Label"/>
+				<shadow-ref refid="ATLAS-no-shadow"/>
+				<text>
+					<font-ref refid="ATLASCustomerCGuiFrame_Label"/>
+					<value>Customer ID:</value>
+				</text>
+			</label>
+			<label id="ATLAS_CUSTOMER_INFO_ID_DATA" rectangle="5,1,5,5" horizontalPositioning="left">
+				<color-scheme-ref refid="default-amountDue-frame"/>
+				<shadow-ref refid="ATLAS-no-shadow"/>
+				<text>
+					<font-ref refid="ATLASCustomerCGuiFrame_Data"/>
+					<value>{$ICR_CUSTOMER_ID}</value>
+				</text>
+			</label>
+			<label id="ATLAS_CUSTOMER_INFO_POINTS_LABEL" rectangle="1,6,3,5" horizontalPositioning="right">
+				<color-scheme-ref refid="ATLASCustomerCGuiFrame_Label"/>
+				<shadow-ref refid="ATLAS-no-shadow"/>
+				<text>
+					<font-ref refid="ATLASCustomerCGuiFrame_Label"/>
+					<value>Rewards:</value>
+				</text>
+			</label>
+			<label id="ATLAS_CUSTOMER_INFO_POINTS_DATA" rectangle="5,7,3,5" horizontalPositioning="right">
+				<color-scheme-ref refid="default-amountDue-frame"/>
+				<shadow-ref refid="ATLAS-no-shadow"/>
+				<text>
+					<font-ref refid="ATLASCustomerCGuiFrame_Data"/>
+					<value>{$ICR_CUSTOMER_POINTS}</value>
+				</text>
+			</label>
+			
+		</frame>
+	</link>
+	
+ 
+<!-- 	<rectangle id="silver-cgui-scale-frame" rectangle="500,6,390,70"/>
+	<rectangle id="default-status-bar" rectangle="570,1,800,31"/>
+-->	
+    <color-scheme id="ATLASCustomerCGuiFrame_Label">
+        <foreground>
+            <color-ref refid="white" />
+        </foreground>
+        <background>
+            <color-ref refid="gray-med" />
+        </background>
+    </color-scheme>
+    <color-scheme id="ATLASCustomerCGuiFrame_Data">
+        <foreground>
+            <color-ref refid="white"/>
+        </foreground>
+        <background>
+            <color-ref refid="gray-med" />
+        </background>
+    </color-scheme>
+	<font id="ATLASCustomerCGuiFrame_Label">
+		<name>SansSerif</name>
+		<size>28</size>
+		<style>plain</style>
+		<min-size>12</min-size>
+		<step-size>1</step-size>
+	</font>
+	<font id="ATLASCustomerCGuiFrame_Data">
+		<name>SansSerif</name>
+		<size>28</size>
+		<style>bold</style>
+		<min-size>12</min-size>
+		<step-size>1</step-size>
+	</font>
+    <shadow id="ATLAS-no-shadow" x="0" y="0">  <!-- hidden -->
+        <color-ref refid="gray-dark" />
+    </shadow>	
+
+
+<!-- remove if not using ATLAS SV mods -->
+<include file="/atlasCustomerCguiExtensions.xml"/>
+
+
+
+</jgui-root>

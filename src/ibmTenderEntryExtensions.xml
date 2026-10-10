@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+	
+<!-- remove if not using ATLAS-->
+<include file="/atlasTenderEntryExtensions.xml"/>
+
+</jgui-root>

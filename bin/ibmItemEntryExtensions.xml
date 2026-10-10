@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<jgui-root xmlns="http://www.ibm.com/SureVision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/SureVision
+sureview.xsd">
+	<!-- <rectangle id="default-notebook" rectangle="109,406,390,384"/> -->
+	<rectangle id="default-notebook" rectangle="159,406,390,304"/>
+	<rectangle id="ICR-customer-info" rectangle="102,406,390,50"/>
+
+	
+	<frame id="ICR_CUSTOMER_INFO" rows="10" columns="10" rectangle="399,402,395,170" visible="true" opaque="true">
+		<color-scheme-ref refid="default-amountDue-frame"/>
+		<label id="ICR_CUSTOMER_INFO_ID_LABEL" rectangle="1,1,4,5">
+			<color-scheme-ref refid="ICRCustomerFrame_Label"/>
+			<shadow-ref refid="ICR-no-shadow"/>
+			<text>
+				<font-ref refid="ICRCustomerFrame_Label"/>
+				<value>Customer ID:</value>
+			</text>
+		</label>
+		<label id="ICR_CUSTOMER_INFO_ID_DATA" rectangle="5,1,5,5" horizontalPositioning="left">
+			<color-scheme-ref refid="default-amountDue-frame"/>
+			<shadow-ref refid="ICR-no-shadow"/>
+			<text>
+				<font-ref refid="ICRCustomerFrame_Data"/>
+				<value>{$ICR_CUSTOMER_ID}</value>
+			</text>
+		</label>
+		<label id="ICR_CUSTOMER_INFO_POINTS_LABEL" rectangle="1,6,3,5" horizontalPositioning="right">
+			<color-scheme-ref refid="ICRCustomerFrame_Label"/>
+			<shadow-ref refid="ICR-no-shadow"/>
+			<text>
+				<font-ref refid="ICRCustomerFrame_Label"/>
+				<value>Rewards:</value>
+			</text>
+		</label>
+		<label id="ICR_CUSTOMER_INFO_POINTS_DATA" rectangle="5,7,3,5" horizontalPositioning="right">
+			<color-scheme-ref refid="default-amountDue-frame"/>
+			<shadow-ref refid="ICR-no-shadow"/>
+			<text>
+				<font-ref refid="ICRCustomerFrame_Data"/>
+				<value>{$ICR_CUSTOMER_POINTS}</value>
+			</text>
+		</label>
+		<!-- <label id="ICR_CUSTOMER_INFO_POINTS_OK" rectangle="1,10,1,10">
+			<color-scheme-ref refid="default-amountDue-frame"/>
+			<text>
+				<font-ref refid="ICRCustomerFrame_Data"/>
+				<value>&gt;-</value>
+			</text>
+		</label> -->
+		
+	</frame>
+	
+    <color-scheme id="ICRCustomerFrame_Label">
+        <foreground>
+            <color-ref refid="gray-light" />
+        </foreground>
+        <background>
+            <color-ref refid="gray-med" />
+        </background>
+    </color-scheme>
+    <color-scheme id="ICRCustomerFrame_Data">
+        <foreground>
+            <color-ref refid="white"/>
+        </foreground>
+        <background>
+            <color-ref refid="gray-med" />
+        </background>
+    </color-scheme>
+	<font id="ICRCustomerFrame_Label">
+		<name>SansSerif</name>
+		<size>28</size>
+		<style>plain</style>
+		<min-size>12</min-size>
+		<step-size>1</step-size>
+	</font>
+	<font id="ICRCustomerFrame_Data">
+		<name>SansSerif</name>
+		<size>28</size>
+		<style>bold</style>
+		<min-size>12</min-size>
+		<step-size>1</step-size>
+	</font>
+    <shadow id="ICR-no-shadow" x="0" y="0">  <!-- hidden -->
+        <color-ref refid="gray-dark" />
+    </shadow>	
+
+<!-- remove if not using ATLAS --> 
+<include file="/atlasItemEntryExtensions.xml"/>
+
+
+</jgui-root>
